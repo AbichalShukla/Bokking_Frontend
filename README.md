@@ -1,16 +1,40 @@
-# React + Vite
+Meeting Room Booking System - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Prerequisites and Quick Start
 
-Currently, two official plugins are available:
+Prerequisites:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Node.js (v18+ recommended)
 
-## React Compiler
+Environment Variables Configuration:
+Create a .env file in your frontend root directory with the following variable:
+VITE_API_URL=http://localhost:5000/api
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Exact Commands to Install, Run & Build:
 
-## Expanding the Oxlint configuration
+1. Frontend Setup & Run:
+* Navigate to the frontend directory: cd frontend
+* Install dependencies: npm install
+* Start frontend application in development mode: npm run dev
+* Build for production: npm run build
+* Start production server: npm run start
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+
+
+Architecture and UI Overview
+
+* Architecture: A single-page application built with React, Vite, and Tailwind CSS, communicating via RESTful APIs with the backend service.
+* Features: Interactive dashboard for room selection, real-time schedule overview, form inputs with automated 15-minute time rounding, and robust client-side validation for booking rules.
+
+Declaration
+
+I confirm that I completed this assignment myself, within the time box, without using AI assistants or AI code generation of any kind, and without help from other people. Any external sources I used are listed above.
+
+Signature: Abichal Shukla
+Date: October 6, 2026
+
+Sources & References
+
+* React Documentation
+* Tailwind CSS Documentation
+* Vite Documentation
