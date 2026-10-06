@@ -1,0 +1,15 @@
+import axios from 'axios';
+
+const getBaseURL = () => {
+  try {
+    if (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_API_URL) {
+      return import.meta.env.VITE_API_URL;
+    }
+  } catch (e) {}
+  return 'http://localhost:5000/api';
+};
+
+export const api = axios.create({
+  baseURL: getBaseURL(),
+  headers: { 'Content-Type': 'application/json' }
+});
